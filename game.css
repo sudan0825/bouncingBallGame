@@ -1,0 +1,143 @@
+body{
+    background-color: antiquewhite;
+}
+#scoreBoard{
+    width: 50%;
+    height: auto;
+    margin: auto;
+
+}
+#scoreBoard>p{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+#scoreBoard>p:first-of-type{
+    color: rebeccapurple;
+}
+
+#scoreBoard>p:last-of-type{
+    color: #e2091e;
+    text-shadow: 2px 2px 3px #e85c6a;
+}
+
+input{
+width: 55%;
+    min-height:26px;
+    
+
+}
+button{
+    width: 20%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #50e5e3;
+}
+button:hover{
+    
+    background-color:#379b9b;
+    
+}
+
+#container{
+
+    width: 80%;
+    margin: auto;
+}
+#ballContainer>.even{
+    text-align: center;
+    position: absolute;
+    background-color: antiquewhite;
+    margin: 30px;
+    -webkit-animation-name: evenanimation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count:infinite; /* Safari 4.0 - 8.0 */
+    animation-name: evenanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+
+}
+#ballContainer>.odd{
+    text-align: center;
+    position: absolute;
+    margin: 10px;
+    background-color: aqua;
+    -webkit-animation-name: oddanimation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 16s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count:infinite; /* Safari 4.0 - 8.0 */
+    animation-name: oddanimation;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+
+
+
+}
+.ball{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes changeSC {
+    from{color: transparent;}
+    to{color: #e2091e}
+}
+/* Standard syntax */
+@keyframes changeSC{
+ from{color: transparent;}
+    to{color: #e2091e}
+
+}
+
+
+/* Standard syntax */
+@keyframes changeSC {
+    0%   {left:0; top:0; background-color:blue; }
+    25%  {left:60%; top:60%;background-color:yellow; }
+    50%  {left:80%; top:0; background-color:blue;}
+    75%  {left:40%; top:50%; background-color:green; }
+    100% {left:0; top:0;background-color:red; }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes evenanimation {
+    0%   {left:0; top:0; background-color:blue; }
+    25%  {left:60%; top:60%;background-color:yellow; }
+    50%  {left:80%; top:0; background-color:blue;}
+    75%  {left:40%; top:50%; background-color:green; }
+    100% {left:0; top:0;background-color:red; }
+}
+
+/* Standard syntax */
+@keyframes evenanimation {
+    0%   {left:0; top:0; background-color:blue; }
+    25%  {left:60%; top:60%;background-color:yellow; }
+    50%  {left:80%; top:0; background-color:blue;}
+    75%  {left:40%; top:50%; background-color:green; }
+    100% {left:0; top:0;background-color:red; }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes oddanimation {
+    0%   {left:0; top:0; background-color:blue; }
+    25%  {left:60%; top:60%;background-color:yellow; }
+    50%  {left:80%; top:0; background-color:blue;}
+    75%  {left:40%; top:50%; background-color:green; }
+    100% {left:0; top:0;background-color:red; }
+}
+
+/* Standard syntax */
+@keyframes oddanimation {
+    0%   {left:0; top:0; background-color:blue; }
+    25%  {left:60%; top:60%;background-color:yellow; }
+    50%  {left:80%; top:0; background-color:blue;}
+    75%  {left:40%; top:50%; background-color:green; }
+    100% {left:0; top:0;background-color:red; }
+}

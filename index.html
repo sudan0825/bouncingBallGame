@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bouncing Ball</title>
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dan Su">
+        <link rel="stylesheet" href="game.css" >
+    </head>
+    <body ng-app="myApp" ng-controller="mainCtrl">
+        <div id="scoreBoard">
+            <input name="numOfBall" ng-model="inputVal">
+            <button ng-click="getVal()">Submit</button>
+            <p>{{inputAlert}}</p>
+            <p id="sc">Scores:{{score}}</p>
+        </div>
+
+        <div id="container">
+            <div id="ballContainer" ng-repeat="x in array" >
+                <div ng-if="$even" class="ball even" ng-click="remove($index)" >{{x}}</div>
+                <div ng-if="$odd" class="ball odd"  ng-click="remove($index)" >{{x}}</div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="app.js"></script>
+
+</html>
