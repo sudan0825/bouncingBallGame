@@ -1,4 +1,4 @@
-The small bouncing ball is created in AngularJS, JavaScript, CSS, HTML,and jQuery
+The small bouncing ball game is created in AngularJS, JavaScript, CSS, HTML,and jQuery
 
 1. By input a number, you decide how many ball will show in the game
 2. The balls color and movement are animated
